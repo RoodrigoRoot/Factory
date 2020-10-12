@@ -1,14 +1,16 @@
 from abc import ABCMeta, abstractmethod
 
 class Person(metaclass=ABCMeta):
-
+    
     @abstractmethod
     def create(self):
+        """Este método lo van a heredar todas clases por defecto"""
         pass
 
 class Doctor(Person):
 
     def create(self, name):
+        """Aquí creamos el Doctor"""
         print("Doctor: {}".format(name))
 
 class Patient(Person):

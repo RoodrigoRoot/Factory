@@ -1,5 +1,7 @@
 from abc import ABCMeta, abstractmethod
-
+"""
+Ejemplo del Patrón de Fabrica nivel básico.
+"""
 class Person(metaclass=ABCMeta):
     
     @abstractmethod
